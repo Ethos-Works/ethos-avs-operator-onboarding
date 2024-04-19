@@ -10,7 +10,7 @@ Please reach out to us anytime if you face any issues with this, we are happy to
 
 If not, instructions to generate keys and register your operator with EigenLayer can be [found here](https://docs.eigenlayer.xyz/eigenlayer/operator-guides/operator-installation).
 
-💡 Please ensure you backup your private keys to a safe location. By default, the encrypted keys will be stored in ~/.eigenlayer/operator_keys/
+💡 Please ensure you backup your private keys to a safe location. By default, the encrypted keys will be stored in `~/.eigenlayer/operator_keys/`
 
 ## Whitelist your operator
 
@@ -47,11 +47,11 @@ bls_private_key_store_path: <BLS_PRIVATE_KEY_FILE_PATH>
 production: true
 ```
 
-For `ecdsa_private_key_store_path` and `bls_private_key_store_path`, you need to set these values to the file paths where your operator's private keys are located. These paths should be relative to the root of the `ethos-avs-operator-onboarding` repository you cloned. By default, these are located at `~/.eigenlayer/operator_keys/` if you used the EigenLayer CLI to generate them.
+For `ecdsa_private_key_store_path` and `bls_private_key_store_path`, you need to set these values to the file paths where your operator's private keys are stored. These paths should be relative to the root of the `ethos-avs-operator-onboarding` repository you cloned. By default, these are stored at `~/.eigenlayer/operator_keys/` if you used the EigenLayer CLI to generate them.
 
 **3. Set your key decryption passwords**
 
-You would have entered a password while creating your private keys earlier. These passwords are needed to decrypt your operator's private keys. You should set these in environment variables:
+You would have entered passwords while creating your private keys earlier. These passwords are needed to decrypt your operator's private keys. You should set these in environment variables:
 ```bash!
 export OPERATOR_ECDSA_KEY_PASSWORD=<PASSWORD_HERE>
 export OPERATOR_BLS_KEY_PASSWORD=<PASSWORD_HERE>
@@ -68,3 +68,5 @@ If you would like to de-register your operator from the Ethos AVS, you can use t
 ```bash!
 ./bin/ethos-cli --config config-files/operator.holesky.yaml deregister-operator-with-ethos-avs
 ```
+
+Again, if you face any issues with this process, please feel free to reach out to us.
