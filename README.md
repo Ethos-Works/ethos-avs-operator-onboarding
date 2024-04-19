@@ -69,4 +69,4 @@ If you would like to de-register your operator from the Ethos AVS, you can use t
 ./bin/ethos-cli --config config-files/operator.holesky.yaml deregister-operator-with-ethos-avs
 ```
 
-Again, if you face any issues with this process, please feel free to reach out to us.
+If you face any issues with this process, please feel free to reach out to us.
