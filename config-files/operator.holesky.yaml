@@ -1,0 +1,18 @@
+operator_address: <OPERATOR_ADDRESS>
+
+# Ethos AVS contract addresses
+avs_registry_coordinator_address: 0x55d1E957a0071F57Ae5b38EfCb70B796aA768A7e
+operator_state_retriever_address: 0xd085215c0b4375B19946Dd87b14ef67Be35F9ff5
+
+# ETH RPC URL
+eth_rpc_url: <ETH_RPC_URL>
+eth_ws_url: <ETH_WS_URL>
+
+chain_id: 17000
+
+# Operator keys
+ecdsa_private_key_store_path: <ECDSA_PRIVATE_KEY_FILE_PATH>
+bls_private_key_store_path: <BLS_PRIVATE_KEY_FILE_PATH>
+
+# This sets the logger level (true = info, false = debug)
+production: true
