@@ -64,6 +64,11 @@ You can run this command to register your operator with the Ethos AVS:
 ./bin/ethos-cli --config config-files/operator.holesky.yaml register-operator-with-ethos-avs
 ```
 
+To confirm that your operator has been registered with Ethos, you can run this command:
+```bash!
+./bin/ethos-cli --config config-files/operator.holesky.yaml print-operator-is-active
+```
+
 If you would like to de-register your operator from the Ethos AVS, you can use this command:
 ```bash!
 ./bin/ethos-cli --config config-files/operator.holesky.yaml deregister-operator-with-ethos-avs
