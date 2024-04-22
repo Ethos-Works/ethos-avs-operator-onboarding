@@ -18,6 +18,8 @@ Send us your operator's ECDSA address so it can be whitelisted on the Ethos AVS.
 
 ## Register with the Ethos AVS
 
+**Once we have whitelisted your address**, please follow the steps below to complete your registration.
+
 **1. Clone this repo**
 ```bash!
 git clone git@github.com:Ethos-Works/ethos-avs-operator-onboarding.git
