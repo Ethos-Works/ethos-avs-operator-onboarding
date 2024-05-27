@@ -30,33 +30,29 @@ git clone git@github.com:Ethos-Works/ethos-avs-operator-onboarding.git
 This config file includes these fields (some of these values are already set for Holesky):
 ```bash!
 operator_address: <OPERATOR_ADDRESS>
+chain_id: 17000
 
 # Ethos AVS contract addresses
-avs_registry_coordinator_address: 0x55d1E957a0071F57Ae5b38EfCb70B796aA768A7e
-operator_state_retriever_address: 0xd085215c0b4375B19946Dd87b14ef67Be35F9ff5
+avs_registry_coordinator_address: 0x52381Bb5A499fbAC8aDf9223049Ab82175BFba43
+operator_state_retriever_address: 0xB4Ab1E260b8e764c1484E8c830CB32dBC65a5179
 
 # ETH RPC URL
 eth_rpc_url: <ETH_RPC_URL>
-eth_ws_url: <ETH_WS_URL>
 
-chain_id: 17000
-
-# Operator keys
+# Operator ECDSA key
 ecdsa_private_key_store_path: <ECDSA_PRIVATE_KEY_FILE_PATH>
-bls_private_key_store_path: <BLS_PRIVATE_KEY_FILE_PATH>
 
 # This sets the logger level (true = info, false = debug)
 production: true
 ```
 
-For `ecdsa_private_key_store_path` and `bls_private_key_store_path`, you need to set these values to the file paths where your operator's private keys are stored. These paths should be relative to the root of the `ethos-avs-operator-onboarding` repository you cloned. By default, these are stored at `~/.eigenlayer/operator_keys/` if you used the EigenLayer CLI to generate them.
+You need to set `ecdsa_private_key_store_path` to the file path where your operator's private key is stored. This path should be relative to the root of the `ethos-avs-operator-onboarding` repository you cloned. By default, this is stored at `~/.eigenlayer/operator_keys/` if you used the EigenLayer CLI to generate it.
 
-**3. Set your key decryption passwords**
+**3. Set your key decryption password**
 
-You would have entered passwords while creating your private keys earlier. These passwords are needed to decrypt your operator's private keys. You should set these in environment variables:
+You would have entered a password while creating your private key earlier. This password is needed to decrypt your operator's private key. You should set this as an environment variable:
 ```bash!
 export OPERATOR_ECDSA_KEY_PASSWORD=<PASSWORD_HERE>
-export OPERATOR_BLS_KEY_PASSWORD=<PASSWORD_HERE>
 ```
 
 **4. Register with the Ethos AVS**
