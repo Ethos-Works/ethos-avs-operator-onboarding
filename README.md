@@ -46,7 +46,7 @@ ecdsa_private_key_store_path: <ECDSA_PRIVATE_KEY_FILE_PATH>
 production: true
 ```
 
-For `ecdsa_private_key_store_path`, you need to set these value to the file path where your operator's private key is stored. This path should be relative to the root of the `ethos-avs-operator-onboarding` repository you cloned. By default, this is stored at `~/.eigenlayer/operator_keys/` if you used the EigenLayer CLI to generate it.
+You need to set `ecdsa_private_key_store_path` to the file path where your operator's private key is stored. This path should be relative to the root of the `ethos-avs-operator-onboarding` repository you cloned. By default, this is stored at `~/.eigenlayer/operator_keys/` if you used the EigenLayer CLI to generate it.
 
 **3. Set your key decryption password**
 
